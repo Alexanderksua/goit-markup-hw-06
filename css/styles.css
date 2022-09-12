@@ -104,11 +104,13 @@ body {
       /*  Задаём значения перехода  */
       transition: fill var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .link-div {
       display: flex;
       justify-content: center;
       align-items: center;
 }
+
 .header-group,
 .header-group .list.contacts,
 .header-group .list.pages {
@@ -167,21 +169,23 @@ body {
 }
 
 /* .header-group>.list.contacts a  */
-.link-div{
-      color:var(--light-gray);
+.link-div {
+      color: var(--light-gray);
       fill: var(--light-gray);
       /*  Задаём значения перехода  */
       transition-property: color, fill;
-      transition-duration:  var(--transition-timing);
-      transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: var(--transition-timing);
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 a:hover .link-div .contacts-icon,
 a:hover .link-div,
 a:focus .link-div .contacts-icon,
-a:focus .link-div{
+a:focus .link-div {
       color: var(--blue);
       fill: var(--blue);
 }
+
 .list.pages>.item.curent a {
       color: var(--blue);
 }
@@ -600,7 +604,7 @@ button.close {
       color: var(--light-white);
       box-shadow: 0px 3px 1px rgba(0 0 0 / .1),
             0px 1px 2px rgba(0 0 0 / .08),
-            0px 2px 2px rgba( 0 0 0 / .12);
+            0px 2px 2px rgba(0 0 0 / .12);
 
 }
 
@@ -715,8 +719,8 @@ button.close {
 .footer {
       display: flex;
       background: rgb(47 48 58);
-      background-image: linear-gradient(90deg, rgba(47 48 58 / .4) 0%, 
-      rgba(47 48 58 / .4) 0%);
+      background-image: linear-gradient(90deg, rgba(47 48 58 / .4) 0%,
+                  rgba(47 48 58 / .4) 0%);
       margin: 0;
       padding-top: 60px;
       padding-bottom: 60px;
@@ -910,16 +914,65 @@ https: //alexanderksua.github.io/goit-markup-hw-06/
 функция распределения времени - cubic-bezier(0.4, 0, 0.2, 1).
 */
 
+.footer-form {
+      display: block;
+      margin-left: 93px;
+}
 
-form{
+.footer-submit-form {
       display: flex;
-      flex-direction: column;
-}
-input {
-      padding: 8px;
-      font-family: inherit;
 }
 
-label{
-      margin-bottom: 8px;
+.footer-form-title {
+      display: block;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      color: var(--light-white);
+      margin-bottom: 10px;
+}
+
+.submit-button-text {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: calc(30 / 16);
+      letter-spacing: 0.06em;
+      color: var(--light-white);
+      padding-right: 10px;
+}
+
+.submit-button-icon {
+      fill: #FFFFFF;
+}
+
+.submit-button-text,
+.submit-button-icon {
+      display: inline-block;
+}
+
+.footer-form-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 28px;
+      margin-left: 10px;
+
+      background-color: rgba(255, 255, 255, 0.1);
+
+      border-radius: 4px;
+      border: none;
+
+      transition-property: background-color, box-shadow;
+      transition-duration: var(--transition-timing);
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+}
+
+.footer-form-button:hover,
+.footer-form-button:focus {
+      background: var(--blue);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

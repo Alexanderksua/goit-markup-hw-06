@@ -73,22 +73,7 @@
 
 
   <main>
-    <div class="container">
 
-      <form>
-        <label for="user_email">Email</label>
-        <input type="email" name="email" id="user_email" autofocus>
-
-        <label for="user_password">Password</label>
-        <input type="password" name="password" id="user_password">
-
-        <label for="user_name">User Name</label>
-        <input type="text" name="username" id="user_name">
-
-        <button type="submit">Submit</button>
-      </form>
-
-    </div>
   </main>
 
   <!-- Подвал страницы -->
@@ -152,10 +137,24 @@
             </li>
           </ul>
         </div>
+
+        <form class="footer-form" autocomplete="off" novalidate>
+          <label for="email" class="footer-form-title">Підпишіться на розсилку</label>
+          <div class="footer-submit-form">
+            <input type="email" class="email-text-area" name="email" id="email" placeholder="E-mail">
+            <button type="submit" class="footer-form-button">
+              <span class="submit-button-text">Підписатися</span>
+              <svg class="submit-button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send-form" class="icon-send-button"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+
       </div>
     </div>
   </footer>
-
+  <script src="./js/js-selected-value.js"></script>
 </body>
 
 </html>
