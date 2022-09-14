@@ -477,8 +477,13 @@ button.close:focus{
       border-radius: 2px;
       background-color:var(--light-white);
       fill: var(--light-white);
-}
+      /*  Задаём значения перехода  */
+      transition-property: fill, background-color, border;
+      transition-duration: var(--transition-timing);
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
 
+}
+/* Переход ЧекБокса */
 .checkbox-group input:checked+svg {
       border:none;
       fill: var(--blue);
