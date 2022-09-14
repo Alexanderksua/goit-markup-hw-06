@@ -470,8 +470,8 @@ button.close:focus{
       left: 12px;
       transform: translateY(-50%);
       content: '';
-      width: 32px;
-      height: 32px;
+      width: 16px;
+      height: 15px;
 }
 .checkbox-group input+svg {
       border: 2px solid var(--black);
