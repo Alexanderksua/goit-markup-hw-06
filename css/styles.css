@@ -541,6 +541,7 @@ button.close:focus{
             0px 1px 1px rgba(0 0 0 / .14),
             0px 2px 1px rgba(0 0 0 / .2);
       border-radius: 4px;
+      z-index: 10;
 }
 
 /* ========================================================================== */
@@ -600,7 +601,8 @@ button.close:focus{
 
 /* FEATURES */
 .features {
-
+position: relative;
+z-index: -10;
       padding-bottom: 94px;
 }
 
@@ -646,9 +648,11 @@ button.close:focus{
 
 .features-list {
       display: flex;
+      position: relative;
       justify-content: center;
       gap: 30px;
       background: var(--white-bkgr);
+      z-index: -1;
 }
 
 .features-title,
