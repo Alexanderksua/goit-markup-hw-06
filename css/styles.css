@@ -464,7 +464,6 @@ button.close:focus{
 
 /* ЗАМЕНА ЧекБокса */
 .checkbox-group>input {
-      appearance: none;
       position: absolute;
       top: 50%;
       left: 12px;
