@@ -320,11 +320,13 @@ button.close {
       transition-duration: var(--transition-timing);
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /* Переход */
 button.close:hover,
-button.close:focus{
-      fill:var(--blue);
+button.close:focus {
+      fill: var(--blue);
 }
+
 /* ========================================================================== */
 /* MODAL FORM*/
 .register-form {
@@ -335,12 +337,13 @@ button.close:focus{
 .register-form-field {
       display: flex;
       flex-direction: column;
+      margin-top: 12px;
 }
 
 /* ЗАГОЛОВОК ФОРМЫ МОДАЛЬНОГО ОКНА  */
 .register-form-title {
       text-align: center;
-      font-weight: 700;
+      /* font-weight: 700; */
       font-size: 20px;
       line-height: calc(23 / 20);
       letter-spacing: 0.03em;
@@ -375,6 +378,7 @@ button.close:focus{
 
 .register-form-field textarea,
 .register-form-field input {
+      outline: none;
       border: 1px solid rgba(33 33 33 / 0.2);
       /*  Задаём значения перехода  */
       transition-property: border-color;
@@ -403,8 +407,8 @@ button.close:focus{
       line-height: 14px;
       letter-spacing: 0.01em;
       color: var(--light-gray);
-      margin-top: 12px;
-      padding-bottom: 4px;
+      /* margin-top: 12px; */
+      margin-bottom: 4px;
 }
 
 /* ПОЛЯ ВВОДА ФОРМЫ */
@@ -472,22 +476,30 @@ button.close:focus{
       width: 16px;
       height: 15px;
 }
+
 .checkbox-group input+svg {
       border: 2px solid var(--black);
       border-radius: 2px;
-      background-color:var(--light-white);
+      background-color: var(--light-white);
       fill: var(--light-white);
       /*  Задаём значения перехода  */
-      transition-property: fill, background-color, border;
+      transition-property: fill, background-color, border, box-shadow;
       transition-duration: var(--transition-timing);
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
-
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      ;
 }
+
 /* Переход ЧекБокса */
 .checkbox-group input:checked+svg {
-      border:none;
+      border: none;
       fill: var(--blue);
       background-color: var(--blue);
+}
+
+/* Focus on Checkbox */
+.checkbox-group .checkbox:focus+svg {
+      border-color: var(--blue);
+      box-shadow: 0px 4px 4px rgba(0 0 0 / .15);
 }
 
 /* ========================================================= */
@@ -508,7 +520,7 @@ button.close:focus{
       letter-spacing: 0.06em;
 
       background-color: var(--blue);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.015);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       /*  Задаём значения перехода  */
       transition-property: background-color, box-shadow;
       transition-duration: var(--transition-timing);
@@ -520,7 +532,6 @@ button.close:focus{
 .register-form-submit-btn button:hover,
 .register-form-submit-btn button:focus {
       background-color: var(--blue-btn-active);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ========================================================================== */
@@ -1045,7 +1056,7 @@ button.close:focus{
 
 .footer-social {
       display: block;
-      margin-right: 93px;
+      /* margin-right: 93px; */
       padding-top: 12px;
 }
 
@@ -1118,21 +1129,21 @@ button.close:focus{
 }
 
 .footer-form input {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: calc(20 / 16);
+      letter-spacing: 0.03em;
       width: 358px;
       border: 1px solid rgba(255 255 255 / 0.3);
       filter: drop-shadow(0px 4px 4px rgba(0 0 0 / 0.15));
       border-radius: 4px;
       background-color: var(--gray);
-
+      padding: 0 0 0 16px;
+      color: var(--light-white);
 }
 
 .footer-form input::placeholder {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: calc(20 / 16);
-      letter-spacing: 0.03em;
       color: rgba(255, 255, 255, 0.6);
-      padding: 15px;
 }
 
 .submit-button-text {
@@ -1180,7 +1191,7 @@ button.close:focus{
 
 .email-text-area:focus {
       color: var(--light-white);
-      padding-left: 10px;
+      /* padding-left: 10px; */
 }
 
 /* 
